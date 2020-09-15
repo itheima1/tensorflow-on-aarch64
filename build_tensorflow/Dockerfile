@@ -25,7 +25,7 @@ RUN /bin/bash -c "update-alternatives --install /usr/bin/python python /usr/bin/
     && /bin/bash -c "update-alternatives --install /usr/bin/python python /usr/bin/python3 150"
 
 WORKDIR /root
-RUN git clone https://github.com/lhelontra/tensorflow-on-arm/
+RUN git clone https://github.com/itheima1/tensorflow-on-aarch64/
 
 WORKDIR /root/tensorflow-on-aarch64/build_tensorflow/
 RUN git checkout v2.3.0
